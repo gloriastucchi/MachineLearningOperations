@@ -4,8 +4,8 @@ from torchvision import datasets, transforms
 
 def process_data(data_folder='../MachineLearningOperations/mloproject/data/raw', output_folder='../MachineLearningOperations/mloproject/data//processed'):
     # Load corrupted MNIST data
-    train_images = torch.cat([torch.load(f'{data_folder}/train_images_{i}.pt') for i in range(6)], dim=0)
-    train_target = torch.cat([torch.load(f'{data_folder}/train_target_{i}.pt') for i in range(6)], dim=0)
+    train_images = torch.cat([torch.load(f'{data_folder}/train_images_{i}.pt') for i in range(10)], dim=0)
+    train_target = torch.cat([torch.load(f'{data_folder}/train_target_{i}.pt') for i in range(10)], dim=0)
     test_images = torch.load(f'{data_folder}/test_images.pt')
     test_target = torch.load(f'{data_folder}/test_target.pt')
 
